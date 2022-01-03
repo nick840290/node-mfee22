@@ -1,4 +1,3 @@
-
-let name ="Nick";
+let name = "Nick";
 
 console.log(`Hello Node ${name}`);
