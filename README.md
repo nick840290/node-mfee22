@@ -1,7 +1,12 @@
 # 12/25-26 上課筆記
 
--123
+-指令
 
+windows dir = ls
+
+git config --list 確認內容
+
+git alias加指令
 
 
 
