@@ -1,5 +1,5 @@
 var delay = function(e){
-    return new Promise(function(doWork){
+    return new Promise(function(resolve, reject){
      setTimeout(doWork,e); 
     });
   };
