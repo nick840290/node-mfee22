@@ -1,3 +1,3 @@
-let name = "Nick1234";
+let name = "Nick";
 
 console.log(`Hello Node ${name}`);
