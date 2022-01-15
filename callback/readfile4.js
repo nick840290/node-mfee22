@@ -1,22 +1,18 @@
 const { readFile } = require("fs");
 
-
-let readFilePromise = new Promise((resolve, reject) => {
-  readFile("test.txt", "utf-8", (err, data) => {
-    if (err) {
-      reject(err);
-      return;
-    }
-    resolve(data);
+readFile("test.txt", "utf-8")
+  .then((result) => {
+    console.log(`這是內建的 promise 版本 ${result}`);
+  })
+  .catch((err) => {
+    console.error(err);
   });
-});
 
 async function main(){
     let dt = new Date();
     console.log(`Start ${dt.toISOString()}`);
     let result1 = await readFilePromise;
     console.log(`${result1}`);
-
     }
 
     main();
