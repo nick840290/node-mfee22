@@ -6,15 +6,12 @@ const { readFile } = require("fs/promises");
 (async () => {
   try {
 
-          let result = await readFile("stock.txt", "utf-8");
         //   console.log(` ${result}`);
-          let stockNo =  `${result}`;
+          let stockNo =  await readFile("stock.txt", "utf-8");;
           let queryDate = "20220115";
-
 
     // 根據變數去抓取資料
     // let stockNo = 2330;
-    let queryDate = "20220115";
 
     // let response = await axios.get(
     //   `https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=${queryDate}&stockNo=${stockNo}`
