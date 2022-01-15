@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>axios</title>
+  </head>
+  <body>
+    <button id="asyncBtn">非同步</button>
+    <div id="response">message</div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      (async () => {
+        try {
+          const response = await axios.get("http://34.221.173.92:3000/data");
+          console.log(response.data);
+        } catch (error) {
+          console.log(error);
+        }
+      })();
+    </script>
+  </body>
+</html>
