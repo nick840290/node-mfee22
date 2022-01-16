@@ -2,6 +2,8 @@
 // exports 本身是一個物件
 
 let name = "default";
+let color = "red";
+
 
 function setName(newName) {
   name = newName;
