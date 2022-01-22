@@ -4,6 +4,8 @@ const mysql = require("mysql2");
 require("dotenv").config();
 const twse = require("./utils/twse");
 const converter = require("./utils/converter");
+const twseSaver = require("./utils/twseSaver");
+
 
 (async () => {
   let connection = mysql.createConnection({
